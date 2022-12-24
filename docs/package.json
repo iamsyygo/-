@@ -1,0 +1,17 @@
+{
+  "name": "docs",
+  "version": "1.0.0",
+  "description": "组件文档",
+  "main": "index.js",
+  "scripts": {
+    "dev": "vitepress dev ."
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "sass": "^1.57.1",
+    "sass-loader": "^13.2.0",
+    "vitepress": "1.0.0-alpha.33"
+  }
+}

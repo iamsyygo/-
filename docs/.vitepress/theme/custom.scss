@@ -1,0 +1,81 @@
+:root{
+    // 重写主题色
+    // 主色
+    --vp-c-brand: #7191f0;
+    --vp-c-brand-light: #7191f0;
+    --vp-c-brand-lighter: #7191f0;
+    --vp-c-brand-dark: #7191f0;
+    --vp-c-brand-darker: #7191f0;
+  
+    // 副色
+    --vp-c-second: #91edff;
+    --vp-c-second-light: #91edff;
+    --vp-c-second-lighter: #91edff;
+    --vp-c-second-dark: #91edff;
+    --vp-c-second-darker: #91edff; 
+
+    --vp-home-hero-name-color: transparent;
+  
+    --vp-home-hero-image-background-image: linear-gradient( -45deg, var(--vp-c-brand) 50%, var(--vp-c-second) 50% );;
+    --vp-home-hero-image-filter:blur(60px);
+
+    --vp-home-hero-name-background: -webkit-linear-gradient(120deg, var(--vp-c-brand), var(--vp-c-second));
+  }
+#app{
+}
+.VPNavBarTitle .title{
+  font-size: 1.5rem;
+}
+.VPImage.logo{
+  height: 50px;
+}
+.title-text{
+  position: relative;
+  transform: scale(1.2);
+  &::after{
+    content: '';
+    display: block;
+    position: absolute;
+    top: 50%;
+    left: -30%;
+    transform: translateY(-50%);
+    width: 5px;
+    height: 50%;
+    border-radius: 6px;
+    z-index: 999;
+    background: var(--vp-c-brand);
+  }
+}
+.items .link{
+  height: 30px;
+  line-height: 30px;
+  padding-left: 10px !important;
+  &.active{
+    background: #ced5eb;
+    border-radius: 5px;
+    
+  }
+}
+.VPNav{
+  box-shadow: 0 0 10px 0 rgba(0,0,0,.25);
+}
+
+// 修改滚动条
+::-webkit-scrollbar {
+  /* 对应纵向滚动条的宽度 */
+  width: 10px;
+  /* 对应横向滚动条的宽度 */
+  height: 10px;
+}
+
+/* 滚动条上的滚动滑块 */
+::-webkit-scrollbar-thumb {
+  background-image: linear-gradient(180deg, var(--vp-c-brand) 0%, var(--vp-c-second) 100%);
+  border-radius: 32px;
+}
+
+/* 滚动条轨道 */
+::-webkit-scrollbar-track {
+  background-color: #dbeffd;
+  border-radius: 32px;
+}
