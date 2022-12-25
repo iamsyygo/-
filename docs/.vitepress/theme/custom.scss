@@ -1,27 +1,46 @@
 :root{
-    // 重写主题色
-    // 主色
-    --vp-c-brand: #7191f0;
-    --vp-c-brand-light: #7191f0;
-    --vp-c-brand-lighter: #7191f0;
-    --vp-c-brand-dark: #7191f0;
-    --vp-c-brand-darker: #7191f0;
-  
-    // 副色
-    --vp-c-second: #91edff;
-    --vp-c-second-light: #91edff;
-    --vp-c-second-lighter: #91edff;
-    --vp-c-second-dark: #91edff;
-    --vp-c-second-darker: #91edff; 
+  // 重写主题色
+  // 主色
+  --vp-c-brand: #7191f0;
+  --vp-c-brand-light: #7191f0;
+  --vp-c-brand-lighter: #7191f0;
+  --vp-c-brand-dark: #7191f0;
+  --vp-c-brand-darker: #7191f0;
 
-    --vp-home-hero-name-color: transparent;
-  
-    --vp-home-hero-image-background-image: linear-gradient( -45deg, var(--vp-c-brand) 50%, var(--vp-c-second) 50% );;
-    --vp-home-hero-image-filter:blur(60px);
+  // 副色
+  --vp-c-second: #91edff;
+  --vp-c-second-light: #91edff;
+  --vp-c-second-lighter: #91edff;
+  --vp-c-second-dark: #91edff;
+  --vp-c-second-darker: #91edff; 
 
-    --vp-home-hero-name-background: -webkit-linear-gradient(120deg, var(--vp-c-brand), var(--vp-c-second));
-  }
-#app{
+  --vp-home-hero-name-color: transparent;
+
+  --vp-home-hero-image-background-image: linear-gradient( -45deg, var(--vp-c-brand) 50%, var(--vp-c-second) 50% );;
+  --vp-home-hero-image-filter:blur(60px);
+
+  --vp-home-hero-name-background: -webkit-linear-gradient(120deg, var(--vp-c-brand), var(--vp-c-second));
+  --vp-layout-max-width:1500px;
+  // dome 样式
+  --demoblock-border: #DCDFE7;
+  --demoblock-control: var(--vp-c-brand);
+  --demoblock-control-bg: varvar(--vp-c-brand);
+}
+html.dark {
+  --demoblock-border: rgba(84, 84, 84, 0.48);
+  
+}
+html{
+  scroll-behavior: smooth;// 设置流畅滚动
+}
+.VPDoc.has-aside .content-container{
+  max-width: 100% !important;
+}
+.content-container{
+  margin: 0 !important;
+}
+.aside{
+  max-width: 200px !important;
 }
 .VPNavBarTitle .title{
   font-size: 1.5rem;
@@ -77,5 +96,26 @@
 /* 滚动条轨道 */
 ::-webkit-scrollbar-track {
   background-color: #dbeffd;
-  border-radius: 32px;
+  // border-radius: 32px;
+}
+
+// 解决出现滚动条时，页面抖动
+// html {
+//   overflow-y: scroll;
+// }
+
+// demo 样式
+.icon-caret-down{
+  border-top: 6px solid var(--vp-c-brand);
+}
+.icon-caret-down,.icon-caret-up{
+  width: 0;
+  height: 0;
+  border-left: 6px solid transparent;
+  border-right: 6px solid transparent;
+  margin-top: 20px;
+ 
+}
+.icon-caret-up{
+  border-bottom: 6px solid var(--vp-c-brand);
 }

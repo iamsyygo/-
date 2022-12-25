@@ -20,8 +20,7 @@ export default  [
     { text: 'API 参考', link: '/api/' },
     {
       text: '更新日志',
-      link:
-        'https://github.com/xinlei3166/vitepress-demo'
+      link: '/更新日志'
     }
   ]
 

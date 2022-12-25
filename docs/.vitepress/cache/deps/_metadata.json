@@ -1,11 +1,17 @@
 {
-  "hash": "68b2ddb6",
-  "browserHash": "83f3a906",
+  "hash": "f9e2266c",
+  "browserHash": "ab52c539",
   "optimized": {
     "vue": {
       "src": "../../../../node_modules/.pnpm/vue@3.2.45/node_modules/vue/dist/vue.runtime.esm-bundler.js",
       "file": "vue.js",
-      "fileHash": "79e21538",
+      "fileHash": "a4f45e1d",
+      "needsInterop": false
+    },
+    "vitepress-plugin-nprogress": {
+      "src": "../../../../node_modules/.pnpm/vitepress-plugin-nprogress@0.0.4/node_modules/vitepress-plugin-nprogress/lib/vitepress-plugin-nprogress.js",
+      "file": "vitepress-plugin-nprogress.js",
+      "fileHash": "ca266395",
       "needsInterop": false
     }
   },
