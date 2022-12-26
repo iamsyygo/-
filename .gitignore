@@ -11,8 +11,18 @@ node_modules
 dist
 dist-ssr
 *.local
+
+# docs
 docs/node_modules
 docs/.vitepress/dist
+
+# element-plus
+packages/element-plus/node_modules
+packages/element-plus/dist
+
+# element-plus
+packages/element-ui/node_modules
+packages/element-ui/dist
 
 # Editor directories and files
 .vscode/*

@@ -1,16 +1,23 @@
 {
-  "name": "web-components",
-  "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
-  "scripts": {
-    "docs:dev": "pnpm -C docs dev"
-  },
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
-  "devDependencies": {
-    "typescript": "^4.9.4",
-    "vue": "^3.2.45"
-  }
+    "name": "web-components",
+    "version": "1.0.0",
+    "description": "",
+    "main": "index.js",
+    "scripts": {
+        "docs:dev": "pnpm -C docs dev",
+        "dev:eu": "pnpm -C packages/element-ui dev:eu"
+    },
+    "keywords": [],
+    "author": "",
+    "license": "ISC",
+    "devDependencies": {
+        "typescript": "^4.9.4",
+        "vue": "^3.2.45"
+    },
+    "dependencies": {
+        "@types/node": "^18.11.17",
+        "element-plus": "^2.2.27",
+        "lodash": "^4.17.21",
+        "prettier": "^2.8.1"
+    }
 }

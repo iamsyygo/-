@@ -17,7 +17,7 @@ export default  [
               },
         ]
     },
-    { text: 'API 参考', link: '/api/' },
+    { text: 'API 参考', link: '/api/index' },
     {
       text: '更新日志',
       link: '/更新日志'

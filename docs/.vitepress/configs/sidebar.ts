@@ -23,7 +23,8 @@ componentsDir.forEach((component) => {
   COMPONENTS_ITEMS[component].push(
     {
       text:name.replace(/\b[a-z]/g, (c) => c.toUpperCase()),
-      link:`/${path}`
+      link:`/${path}`,
+      activeMatch: `^/${path}`
     }
   )
   return ''
@@ -52,15 +53,16 @@ const SIDEBAR_COMPONENTS=[
           {
             text: 'Element-plus',
             collapsible: true,
-            collapsed: true,
             items:COMPONENTS_ITEMS['element-plus']
           },
           {
             text: 'Element-ui',
+            collapsible: true,
             items:COMPONENTS_ITEMS['element-ui']
           },
           {
             text: 'Ant-design',
+            collapsible: true,
             items:COMPONENTS_ITEMS['ant-design']
           },
         ]
@@ -93,7 +95,7 @@ const SIDEBAR_GUIDE = [
 ]
 
 export default {
-    '/api/':SIDEBAR_API,
     '/components/': SIDEBAR_COMPONENTS,
+    '/api/':SIDEBAR_API,
     '/guide/':SIDEBAR_GUIDE,
 }

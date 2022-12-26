@@ -1,0 +1,18 @@
+{
+  "name": "element-plus",
+  "version": "1.0.0",
+  "description": "",
+  "main": "dist/@element-plus.cjs.js",
+  "moudle": "dist/@element-plus.es.js",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "docs:build": "vite build --mode docs"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "vue-router": "^4.1.6"
+  }
+}

@@ -1,0 +1,19 @@
+{
+    "name": "element-ui",
+    "version": "1.0.0",
+    "description": "",
+    "main": "dist/@element-ui.cjs.js",
+    "moudle": "dist/@element-ui.es.js",
+    "scripts": {
+        "dev:eu": "vite",
+        "build": "vite build",
+        "docs:build": "vite build --mode docs"
+    },
+    "keywords": [],
+    "author": "",
+    "license": "ISC",
+    "dependencies": {
+        "element-ui": "^2.15.12",
+        "vue": "^2.5.17"
+    }
+}
